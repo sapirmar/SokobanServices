@@ -1,10 +1,13 @@
 package com.rs.db;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
+import javax.persistence.Id;
+/**
+ * the class that represent the solutions table
+ * @author Sapir Markel and Roee Sisso
+ *
+ */
 @Entity(name="Solutions")
 public class LevelAndSteps {
 	
@@ -28,7 +31,11 @@ public class LevelAndSteps {
 	}
 	
 	
-	//constructors
+	/**
+	 * the level as string rowsNum,colNum,@#Ao and the moves that solve him as a string ludr
+	 * @param levelName
+	 * @param moves
+	 */
 	public LevelAndSteps(String levelName, String moves) {
 		super();
 		LevelName = levelName;

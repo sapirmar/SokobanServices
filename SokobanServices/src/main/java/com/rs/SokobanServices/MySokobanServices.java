@@ -1,18 +1,20 @@
 package com.rs.SokobanServices;
 
-import javax.ws.rs.Consumes;
+
 import javax.ws.rs.GET;
-import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-
 import com.rs.db.LevelAndSteps;
 import com.rs.db.LevelAndStepsManager;
 @Path("resources")
+/**
+ * web service to the sokoban services
+ * @author Sapir Markel and Roee Sisso
+ *
+ */
 public class MySokobanServices {
 private LevelAndStepsManager dbHandler = new LevelAndStepsManager();
 	@Path("get/{levelName}")

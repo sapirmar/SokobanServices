@@ -6,7 +6,11 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-
+/**
+ * manager for the table level and steps
+ * @author Sapir Markel and Roee Sisso
+ *
+ */
 public class LevelAndStepsManager {
 	private SessionFactory factory;
 
